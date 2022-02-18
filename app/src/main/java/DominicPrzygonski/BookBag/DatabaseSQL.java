@@ -40,13 +40,13 @@ public class DatabaseSQL extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + TABLE_NAME +
                         " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        COLUMN_NAME + " TEXT DEFAULT 'Empty', " +
+                        COLUMN_NAME + " TEXT, " +
                         COLUMN_AUTHOR + " TEXT DEFAULT 'Empty', " +
                         COLUMN_LENGTH + " INTEGER DEFAULT 'Empty', " +
                         COLUMN_SEQUELS + " TEXT DEFAULT 'Empty', " +
                         COLUMN_PREQUELS + " TEXT DEFAULT 'Empty', " +
                         COLUMN_GENRE + " TEXT DEFAULT 'Empty', " +
-                        COLUMN_COMPLETION + " TEXT DEFAULT 'Empty'); ";
+                        COLUMN_COMPLETION + " TEXT); ";
         db.execSQL(query);
 
         String loginQuery = "CREATE TABLE " + LOGIN_TABLE_NAME +
