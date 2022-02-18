@@ -1,8 +1,8 @@
 
 # BookBag
 
-An Android app I created to store, display and filter information about the users favourite
-books. 
+An Android app I created to store, display and filter information about the users 
+favourite books primarily using MySQL.
 
 
 ## Screenshots
